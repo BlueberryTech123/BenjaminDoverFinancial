@@ -1,0 +1,71 @@
+body
+{
+    margin: 0px;
+    font-family: "Arial";
+}
+
+.toolbar
+{
+    width: 100vw;
+    background: linear-gradient(#ff0000, #7a0000);
+    padding: 15px;
+    color: white;
+    height: 35px;
+}
+
+button
+{
+    background-color: #408f00;
+    padding: 10px;
+    border: none 5px;
+    color: white;
+    cursor: pointer;
+    transition: 120ms;
+}
+button:hover
+{
+    border-bottom: solid 5px white;
+}
+
+input
+{
+    border: none;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+input:focus
+{
+    outline: 0;
+}
+
+.toolbar button
+{
+    background: none;
+}
+
+.main
+{
+    padding: 25px;
+    background-image: url("https://images.fineartamerica.com/images-medium-large-5/nice-landscape-summer-boon-mee.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    backdrop-filter: blur(7px);
+    width: 100vw;
+    height: 350px;
+
+    color: white;
+}
+
+.login
+{
+    background: linear-gradient(#ff0000, #7a0000);
+    padding: 10px;
+    width: 220px;
+    height: 200px;
+}
+
+.support
+{
+    padding: 25px;
+}
