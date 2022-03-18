@@ -13,6 +13,19 @@ body
     height: 35px;
 }
 
+.popup
+{
+    background: linear-gradient(#4f4f4f, #363636);
+    position: fixed;
+    width: 40vw;
+    height: 20vw;
+    top: 20px;
+    left: 30vw;
+    padding: 20px;
+    color: white;
+    box-shadow: 0px 0px 45px 4px black;
+}
+
 button
 {
     background-color: #408f00;
