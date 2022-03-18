@@ -60,7 +60,7 @@ input:focus
 .main
 {
     padding: 25px;
-    background-image: url("https://images.fineartamerica.com/images-medium-large-5/nice-landscape-summer-boon-mee.jpg");
+    background-image: "Bg.png";
     background-repeat: no-repeat;
     background-size: cover;
     
