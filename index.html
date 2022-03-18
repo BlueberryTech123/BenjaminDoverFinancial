@@ -25,7 +25,7 @@
                 <h3>Login</h3>
                 <input placeholder="Username"></input><br>
                 <input type="password" placeholder="Password"></input>
-                <button>Login</button>
+                <button onclick="captcha()">Login</button>
                 <button style="background: none;">Signup</button>
             </div>
         </div>
@@ -34,7 +34,7 @@
             Please solve this simple math problem to prove you aren't a robot<br><br>
             <img src="captchas/c1.png" id="captchaImg"><br><br>
             <input placeholder="Answer here" type="number" id="captchaInput">
-            <button>Submit</button>
+            <button onclick="submitCaptcha()">Submit</button>
         </div>
         
         <div class="support">
