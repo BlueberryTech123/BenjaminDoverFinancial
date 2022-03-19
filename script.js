@@ -14,9 +14,11 @@ function captcha(valid = true) {
 
     if (valid) {
         document.getElementById("errorText").innerHTML = "";
+        captchaInput.style.background = "#fff";
     }
     else {
         document.getElementById("errorText").innerHTML = "Try Again";
+        captchaInput.style.background = "#dea2a2";
     }
 }
 
