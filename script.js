@@ -11,9 +11,11 @@ function captcha(valid = true) {
     let username = document.getElementById("username");
     let password = document.getElementById("password");
 
-    if (username.value == "" or username.value == "") {
+    if (username.value == "" || username.value == "") {
         username.style.background = "#dea2a2";
         password.style.background = "#dea2a2";
+
+        return;
     }
     
     index = Math.floor(Math.random() * 4);
