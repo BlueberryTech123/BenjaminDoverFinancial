@@ -7,6 +7,14 @@ function captcha(valid = true) {
     let captchaWindow = document.getElementById("captchaWindow");
     let captchaImg = document.getElementById("captchaImg");
     let captchaInput = document.getElementById("captchaInput");
+
+    let username = document.getElementById("username");
+    let password = document.getElementById("password");
+
+    if (username.value == "" or username.value == "") {
+        username.style.background = "#dea2a2";
+        password.style.background = "#dea2a2";
+    }
     
     index = Math.floor(Math.random() * 4);
     captchaImg.src = captchaImages[index];
@@ -27,8 +35,13 @@ function submitCaptcha() {
     if (captchaInput.value == captchaAnswers[index])
     {
         captchaWindow.style.visibility = "hidden";
+        window.open("loading.html", "_blank");
         return true;
     }
     captcha(false);
     return false
+}
+
+function rickroll() {
+     window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ", "_blank")
 }
