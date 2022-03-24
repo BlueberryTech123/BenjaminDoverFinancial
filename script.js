@@ -41,10 +41,9 @@ function submitCaptcha() {
     if (captchaInput.value == captchaAnswers[index])
     {
         captchaWindow.style.visibility = "hidden";
-        fakeLoading();
+        window.location.href = "financial.html";
         return true;
     }
-    window.location.href = "financial.html";
     return false
 }
 
