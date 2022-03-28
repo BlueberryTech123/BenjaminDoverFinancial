@@ -6,7 +6,28 @@ body
 
 a
 {
-    color: #75caff;
+    color: #57beff;
+}
+
+
+input
+{
+    border: 1px solid lightgrey;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+textarea
+{
+    border: 1px solid lightgrey;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 80vw;
+    height: 20vw;
+    resize: none;
+}
+input:focus
+{
+    outline: 0;
 }
 
 .toolbar
@@ -32,6 +53,85 @@ a
     visibility: hidden;
 }
 
+.chatButton
+{
+    padding: 12px;
+    position: fixed;
+    border-radius: 420px;
+    border: 5px outset #c70000;
+    background: #e00000;
+    width: 50px;
+    height: 50px;
+
+    bottom: 25px;
+    right: 25px;
+
+    box-shadow: 0px 0px 45px 1px black;
+}
+.chatButton:hover
+{
+    background: #ad0000;
+    border: 5px outset #8a0000;
+}
+
+.chat
+{
+    box-shadow: 0px 0px 45px 1px black;
+    visibility: hidden;
+    bottom: 85px;
+    right: 25px;
+    position: fixed;
+    background: #fff;
+    width: 300px;
+    height: 350px;
+}
+.chatTop
+{
+    background: linear-gradient(#ff0000, #7a0000);
+    padding: 15px;
+    color: white;
+}
+.chatMiddle
+{
+    padding: 15px;
+    height: 210px;
+    overflow-y: auto;
+}
+.chatBottom
+{
+    padding: 15px;
+    bottom: 0px;
+    background: #cccccc;
+}
+.chatBottom input
+{
+    width: 110px;
+    margin: 0px;
+}
+.chatMsgMe
+{
+    padding: 10px;
+    border: 0px none;
+    border-radius: 20px 0px 20px 20px;
+    background: #00c227;
+    color: #fff;
+    margin-bottom: 10px;
+    width: fit-content;
+
+    margin-left: auto; 
+    margin-right: 0px;
+}
+.chatMsgOther
+{
+    padding: 10px;
+    border: 0px none;
+    border-radius: 0px 20px 20px 20px;
+    background: #c7c7c7;
+    margin-bottom: 10px;
+    width: fit-content;
+}
+
+
 button
 {
     background-color: #408f00;
@@ -44,17 +144,7 @@ button
 button:hover
 {
     border-bottom: solid 5px white;
-}
-
-input
-{
-    border: none;
-    padding: 10px;
-    margin-bottom: 10px;
-}
-input:focus
-{
-    outline: 0;
+    margin-bottom: -5px;
 }
 
 .toolbar button

@@ -13,10 +13,11 @@
         <div class="toolbar">
             Benjamin Dover Financial
             <img src="https://www.pngkit.com/png/full/4-40264_white-dove-png-dove-clip-art-white.png" style="height: 23px; float: center; margin: auto;">
-            <button>Home</button>
-            <button>Login</button>
-            <button>Crypto</button>
-            <button>Support</button>
+            <button onclick="window.location.href = 'index.html'">Home</button>
+            <button onclick="window.location.href = 'index.html'">Login</button>
+            <button onclick="window.location.href = 'financial.html'">Bank</button>
+            <button onclick="fakeLoading()">Crypto</button>
+            <button onclick="fakeLoading()">Support</button>
         </div>
         <div class="main">
             <h1>Benjamin Dover Financial</h1>
@@ -41,8 +42,10 @@
         
         <div class="support">
             <h2>Need Help?</h2>
-            Our AMAZING support team will assist you if you have any problems. Trust us, we've been doing this for 68 years! We will not scam you either.
-            <h4>Contact us now at: benjamindoversupport@gmail.com</h4>
+            Our AMAZING support team will assist you if you have any problems. Trust us, we've been doing this for 68 years! We will not scam you either.<br><br>
+            <input type="email" placeholder="Email" id="supportEmail">
+            <textarea placeholder="Start typing here..." id="supotThjingy"></textarea>
+            <br><button onclick="document.getElementById('supotThjingy').value = ''; document.getElementById('supportEmail').value = '';">Submit</button>
         </div>
 
         <div class="main" style="height: 520px; background-image: url('ipad2.png');">
@@ -76,6 +79,27 @@
             <br><br>
             <img src="MikeHunt.jpg" class="profilePic"> <b>Mike Hunt - Employee of the Month</b><br><br><br>
             <a href="https://this-person-does-not-exist.com/en">Photos courtesy of this-person-does-not-exist.com</a> so basically this isn't photos of random dudes yeah ok lol
+        </div>
+
+        <button class="chatButton" onclick="toggleChat()">
+            🗨
+        </button>
+        <div class="chat" id="chat">
+            <div class="chatTop">
+                Agent Richard
+            </div>
+            <div class="chatMiddle" id="chatMiddle">
+                <div class="chatMsgMe">
+                    Anonymous#35234523 started a chat
+                </div>
+                <div class="chatMsgOther">
+                    Hello I am Ben Dover Financial's virtual support agent Richard! I am still learning, so bear with me. Please note we are experiencing technical difficulties at the moment, so expect a lot of crashes today.
+                </div>
+            </div>
+            <div class="chatBottom">
+                <input placeholder="Send something..." id="message">
+                <button onclick="sendMessage()">Send</button>
+            </div>
         </div>
     </body>
     
